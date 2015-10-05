@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" tools:context="com.kalvineng.reflex.BuzzerPackage.BuzzerFragment2">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="288dp"
+        android:text="@string/player1"
+        android:id="@+id/twoplayer_1"
+        android:onClick="player1"
+        android:layout_gravity="center_horizontal|top" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="288dp"
+        android:text="@string/player2"
+        android:id="@+id/twoplayer_2"
+        android:onClick="player2"
+        android:layout_gravity="center_horizontal|bottom" />
+</FrameLayout>

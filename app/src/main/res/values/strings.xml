@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">kalvin1-reflex</string>
+
+    <string name="title">REFLEX</string>
+
+    <string name="title_activity_reaction_times">Reaction Times</string>
+
+    <string name="reaction_instructions">To test your reaction time, wait for the screen to turn green and tap!</string>
+    <string name="cancel">Cancel</string>
+    <string name="okay">Okay</string>
+
+    <string name="player_select">Select the Amount of Players</string>
+
+    <string name="player1">Player 1</string>
+    <string name="player2">Player 2</string>
+    <string name="player3">Player 3</string>
+    <string name="player4">Player 4</string>
+
+    <string name="email">Email</string>
+    <string name="action_clear">Clear Stats</string>
+
+    <string name="start">Wait for Green</string>
+
+    <string name="title_activity_buzzer">Gameshow Buzzer</string>
+
+    <string name="title_activity_statistics">Statistics</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+</resources>

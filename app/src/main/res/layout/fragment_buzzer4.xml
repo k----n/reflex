@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.kalvineng.reflex.BuzzerPackage.BuzzerFragment4">
+
+    <Button
+        android:layout_width="195dp"
+        android:layout_height="288dp"
+        android:text="@string/player1"
+        android:id="@+id/fourplayer_1"
+        android:onClick="player1"
+        android:layout_gravity="start|top" />
+
+    <Button
+        android:layout_width="195dp"
+        android:layout_height="288dp"
+        android:text="@string/player2"
+        android:id="@+id/fourplayer_2"
+        android:onClick="player2"
+        android:layout_gravity="end|top" />
+
+    <Button
+        android:layout_width="195dp"
+        android:layout_height="288dp"
+        android:text="@string/player3"
+        android:id="@+id/fourplayer_3"
+        android:onClick="player3"
+        android:layout_gravity="start|bottom" />
+
+    <Button
+        android:layout_width="195dp"
+        android:layout_height="288dp"
+        android:text="@string/player4"
+        android:id="@+id/fourplayer_4"
+        android:onClick="player4"
+        android:layout_gravity="end|bottom" />
+</FrameLayout>
