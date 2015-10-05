@@ -15,19 +15,43 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 
+/**
+ Activity Class that creates statistics UI interface
+
+ Calls other classes within StatsPackage (parser, i/o class)
+
+ Copyright 2015 Google Inc, Kalvin Eng
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ **/
+
 public class Statistics extends ActionBarActivity {
+    // load methods
     private StatsManager statsManager = new StatsManager();
     private StatsBuzzerParser statsBuzzerParser = new StatsBuzzerParser();
     private ReactionStatsCalc reactionStatsCalc = new ReactionStatsCalc();
     private  StatsReactionParser statsReactionParser = new StatsReactionParser();
 
+    // declare filenames
     private static final String FILENAME0 = "stat_reaction.sav";
     private static final String FILENAME1 = "stat_buzzer.sav";
 
+    // create lists of what is to be stored
     protected ArrayList<String> reaction_records = new ArrayList<String>();
     protected ArrayList<String> buzzer_records = new ArrayList<String>();
     protected ArrayList<String> allStats;
 
+    // start adapter for listview
     private ArrayAdapter<String> adapter;
     private ListView listView;
 
@@ -135,6 +159,7 @@ public class Statistics extends ActionBarActivity {
         buzzer_records.add(statsBuzzerParser.countPlayer(4, 4, "4Players: 4 pressed", records));
     }
 
+    // create a string for bodytext of email
     private String stringBuilder(ArrayList<String> records){
         String string = new String();
         for (int i = 0; i < records.size(); ++i){
