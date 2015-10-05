@@ -2,7 +2,7 @@
 An OO implementation of a reaction time game and 2-4 player buzzer using Android.
 
 ## System Documentation
-System documentation can be found in the /doc folder containing a UML diagram (UML.png) and video demo (reflexapp.mkv).
+System documentation can be found in the /doc folder containing a UML diagram (UML.jpg) and video demo (reflexapp.mkv).
 
 ## Video Demonstration
 https://github.com/k----n/reflex/blob/master/doc/reflexapp.mkv
